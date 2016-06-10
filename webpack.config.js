@@ -3,12 +3,6 @@ var webpack = require("webpack");
 var env = process.env.WEBPACK_ENV;
 
 var plugins = [
-    new webpack.ProvidePlugin({
-        "_": "underscore",
-        "Backbone": "backbone",
-        "$": "jquery",
-        "jQuery": "jquery"
-    })
 ];
 
 var loaders = [
