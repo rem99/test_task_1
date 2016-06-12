@@ -1,0 +1,10 @@
+<table>
+    <tr ng-repeat="row in diff">
+       <td>{{row.line}}</td>
+       <td>{{row.operation}}</td>
+       <td>
+           <span ng-if="row.operation === '*'">{{row.changedFrom}} |</span>
+           {{row.text}}
+       </td>
+    </tr>
+</table>

@@ -31,7 +31,7 @@ if (env === 'build') {
 }
 
 var config = {
-    entry: 'script.js',
+    entry: 'index.js',
     resolve: {
         modulesDirectories: [
             "./src",

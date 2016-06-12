@@ -6,7 +6,27 @@
     <script src='dist/bundle.js'></script>
     <title>Agile Engine Task</title>
 </head>
-<body>
-
+<body ng-app="app">
+    <main ng-controller="MainController">
+        <form ng-submit="loadFiles()">
+            <div>
+                Link 1: <input type="url" required ng-model="baseTextFile"> {{baseTextFileErr}}
+            </div>
+            <div>
+                Link 2: <input type="url" required ng-model="newTextFile"> {{newTextFileErr}}
+            </div>
+            <div>
+                <!--<button ng-click="loadFiles()">Load and compare</button>-->
+                <input type="submit" value="Load and compare" />
+            </div>
+        </form>
+        <div>
+            <textarea name="" cols="30" rows="10" ng-model="compare.baseText"></textarea>
+            <textarea name="" cols="30" rows="10" ng-model="compare.newText"></textarea>
+        </div>
+        <div>
+            <diff compare="compare"></diff>
+        </div>
+    </main>
 </body>
 </html>
