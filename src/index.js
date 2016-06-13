@@ -1,1 +1,1 @@
-﻿import 'app.controller.main';
+import 'app/app.controller.main.js';

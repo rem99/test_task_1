@@ -2,7 +2,7 @@
   "name": "AgileEngineTask",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "src/diff/diff.directive.diff.js",
   "scripts": {
     "build": "WEBPACK_ENV=dev webpack --progress",
     "dev": "WEBPACK_ENV=dev webpack --hot --progress --colors --watch"
